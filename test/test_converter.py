@@ -2,8 +2,10 @@
 
 from visioconverter import Converter  # pylint: disable=E0401
 
-src_path = 'test/src_dir/example1.vsdx'
-out_path = 'test/out_dir/'
+src_path = 'test/test_files/'
+src_path = 'test/test_files/test.vsdx'
+out_path = 'test/out_dir'
+
 
 Converter.vsdx2svg(
     src_path=src_path,

@@ -33,35 +33,42 @@ Usage
 from converter import Converter
 
 # Convert a single .vsdx file to SVG
+```python
 svg_files = Converter.vsdx2svg(
     src_path="diagram.vsdx",
     out_dir="output_svgs",    # optional, defaults to same as source
     visible=False             # optional, show Visio UI?
 )
-print("SVGs created:", svg_files)
+```
 
 # Batch-convert all .vsdx files in a folder
+```python
 Converter.folder_vsdx2svg(
     src_folder="vsdx_files",
     out_folder="output_svgs",  # optional, defaults to source folder
     visible=False
 )
+```
 2. From Command Line
 No CLI interface is included by default. See Python sample above or integrate as needed.
 
-Reference
+# Reference
+```
 Converter.vsdx2svg(src_path, out_dir=None, visible=False) -> list[str]
-src_path: Path to a .vsdx file.
-out_dir: Output directory (default: same as source file).
-visible: Whether to show the Visio UI (default: False).
-Returns list of SVG file paths created.
+    src_path: Path to a .vsdx file.
+    out_dir: Output directory (default: same as source file).
+    visible: Whether to show the Visio UI (default: False).
+    Returns list of SVG file paths created.
 
 Converter.folder_vsdx2svg(src_folder, out_folder=None, visible=False)
-src_folder: Folder containing .vsdx files.
-out_folder: Where to save SVGs (default: same as each source file).
-visible: Whether to show the Visio UI.
-Notes
+    src_folder: Folder containing .vsdx files.
+    out_folder: Where to save SVGs (default: same as each source file).
+    visible: Whether to show the Visio UI.
+```
+
+## Notes
 Requires Microsoft Visio to be installed and licensed on your system.
 Only Windows is supported (due to COM automation).
 Each page in a Visio document is exported as a separate SVG (<base>_pageX.svg).
 Error messages are printed to stdout.
+
