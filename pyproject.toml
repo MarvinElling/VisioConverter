@@ -8,6 +8,7 @@ name = "visioconverter"
 authors = [
     {name = "Marvin Elling", email = "mane.der@web.de"},
 ]
+version = "1.0.0"
 classifiers = [
     "Development Status :: 5 - Production/Stable",
     "License :: OSI Approved :: Apache Software License",
@@ -25,7 +26,6 @@ description = "Convert Visio .vsdx to other file formats."
 dependencies = [
   "pywin32",
 ]
-dynamic = ["version"]
 keywords = [
     "Visio",
     "Converter",
