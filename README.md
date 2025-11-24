@@ -1,3 +1,4 @@
+[![PyPI Downloads](https://static.pepy.tech/personalized-badge/visioconverter?period=total&units=INTERNATIONAL_SYSTEM&left_color=BLACK&right_color=GREEN&left_text=downloads)](https://pepy.tech/projects/visioconverter)
 # Visio VSDX to File Converter
 
 *A Python utility for batch converting Microsoft Visio VSDX files to other using the Visio COM interface*
